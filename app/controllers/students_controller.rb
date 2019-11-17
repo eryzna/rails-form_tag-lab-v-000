@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    params.inspect
+    @student=params.inspect
     redirect_to new_student_path
   end
 
