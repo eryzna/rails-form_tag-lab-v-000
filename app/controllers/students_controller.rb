@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     @student=Student.create[:params]
-    params.inspect
+    redirect to student_path
   end
 
 end
